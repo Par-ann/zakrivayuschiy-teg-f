@@ -18,7 +18,7 @@
   min-block-size: 100dvb;
   padding-block-start: 100px;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' var(--card-text-weight);
+  font-variation-settings: "wght" var(--card-text-weight);
   background-image: var(--page-background);
   background-size: cover;
   background-attachment: fixed;
@@ -41,7 +41,6 @@
 
 .header__logo {
   font-size: clamp(49px, 43.3662px + 1.5023vw, 65px);
-
 }
 
 .header__description {
@@ -65,7 +64,7 @@
 
 .card__title {
   font-size: inherit;
-  font-variation-settings: 'wght' var(--card-title-weight);
+  font-variation-settings: "wght" var(--card-title-weight);
   padding: 4px 10px;
 }
 
@@ -131,7 +130,10 @@
     0 -1px var(--text-stroke-color);
 }
 
-@supports ((-webkit-text-stroke: 1px var(--text-stroke-color)) or (text-stroke: 1px var(--text-stroke-color))) {
+@supports (
+  (-webkit-text-stroke: 1px var(--text-stroke-color)) or
+    (text-stroke: 1px var(--text-stroke-color))
+) {
   .card__label {
     -webkit-text-stroke: 1px var(--text-stroke-color);
     text-stroke: 1px var(--text-stroke-color);
@@ -374,8 +376,6 @@ button:focus {
 .card__icon-button:focus-visible {
   border: var(--border-content);
 }
-
-
 
 @media (width <=375px) {
   .save-button {
